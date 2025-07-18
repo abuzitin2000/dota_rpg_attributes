@@ -1,3 +1,4 @@
+# DESCRIPTION
 Have you ever thought the 3 attributes: strength, agility and intelligence aren't enough? Well, this mod switches them with 7 attributes you would find in an rpg game.
 
 You get 5 attribute points every level you can allocate however you want, you also start with 18 points.
