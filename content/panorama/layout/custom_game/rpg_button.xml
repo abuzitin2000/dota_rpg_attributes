@@ -1,0 +1,83 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/rpg_button.css"/>
+	</styles>
+
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/util.js" />
+		<include src="file://{resources}/scripts/custom_game/rpg_button.js"/>
+	</scripts>
+
+	<snippets>
+
+	</snippets>
+
+	<Panel class="baseRPGPanel" hittest="false">
+		<Panel id="RPGButtonPanel">
+			<Button id="RPGButton" onactivate="toggleRPG()"/>
+		</Panel>
+
+		<Panel id="RPGStatsPanel">
+			<!-- Header -->
+			<Button id="RPGStatsClose" onactivate="toggleRPG()"/>
+			<Label id="RPGStatsHead" text="Attributes"/>
+			<Label id="RPGStatsRemaining" text="Points Remaining: 0"/>
+
+			<!-- Stats List -->
+			<Panel id="RPGStatsListPanel">
+				<Panel class="RPGStatsStatPanel">
+					<Image class="RPGStatsStatImage" src="s2r://panorama/images/badges/ti6_battle_pass_badge_4_png.vtex"/>
+					<Label class="RPGStatsStatText" text="Strength"/>
+					<Label id="StrengthNumber" class="RPGStatsStatNumber" text="0"/>
+					<Button class="RPGStatsStatButton" onactivate="addStrength()"/>
+					<Label class="RPGStatsStatDetail" text="+Base Attack Damage"/>
+				</Panel>
+				<Panel class="RPGStatsStatPanel">
+					<Image class="RPGStatsStatImage" src="s2r://panorama/images/badges/fall_2016_battle_pass_badge_4_png.vtex"/>
+					<Label class="RPGStatsStatText" text="Dexterity"/>
+					<Label id="DexterityNumber" class="RPGStatsStatNumber" text="0"/>
+					<Button class="RPGStatsStatButton" onactivate="addDexterity()"/>
+					<Label class="RPGStatsStatDetail" text="+Attack Speed, +Armor, +Move Speed"/>
+				</Panel>
+				<Panel class="RPGStatsStatPanel">
+					<Image class="RPGStatsStatImage" src="s2r://panorama/images/badges/nemestice_2021_battle_pass_badge_2_png.vtex"/>
+					<Label class="RPGStatsStatText" text="Constitution"/>
+					<Label id="ConstitutionNumber" class="RPGStatsStatNumber" text="0"/>
+					<Button class="RPGStatsStatButton" onactivate="addConstitution()"/>
+					<Label class="RPGStatsStatDetail" text="+Health, +Health Regen, +Status Resistance"/>
+				</Panel>
+				<Panel class="RPGStatsStatPanel">
+					<Image class="RPGStatsStatImage" src="s2r://panorama/images/badges/winter_2017_battle_pass_badge_4_png.vtex"/>
+					<Label class="RPGStatsStatText" text="Intelligence"/>
+					<Label id="IntelligenceNumber" class="RPGStatsStatNumber" text="0"/>
+					<Button class="RPGStatsStatButton" onactivate="addIntelligence()"/>
+					<Label class="RPGStatsStatDetail" text="+Spell Damage, +Magic Resistance"/>
+					
+				</Panel>
+				<Panel class="RPGStatsStatPanel">
+					<Image class="RPGStatsStatImage" src="s2r://panorama/images/badges/international_2017_battle_pass_badge_4_png.vtex"/>
+					<Label class="RPGStatsStatText" text="Wisdom"/>
+					<Label id="WisdomNumber" class="RPGStatsStatNumber" text="0"/>
+					<Button class="RPGStatsStatButton" onactivate="addWisdom()"/>
+					<Label class="RPGStatsStatDetail" text="+Mana, +Mana Regen, +Cooldown Reduction"/>
+					<Label class="RPGStatsStatDescriptionTextInfo" text="&#9432; Cooldown reduction stacks with other sources"/>
+				</Panel>
+				<Panel class="RPGStatsStatPanel">
+					<Image class="RPGStatsStatImage" src="s2r://panorama/images/badges/international_2018_battle_pass_badge_4_png.vtex"/>
+					<Label class="RPGStatsStatText" text="Charisma"/>
+					<Label id="CharismaNumber" class="RPGStatsStatNumber" text="0"/>
+					<Button class="RPGStatsStatButton" onactivate="addCharisma()"/>
+					<Label class="RPGStatsStatDetail" text="+Gold Gain, -Death Timer"/>
+				</Panel>
+				<Panel class="RPGStatsStatPanel">
+					<Image class="RPGStatsStatImage" src="s2r://panorama/images/badges/international_2019_battle_pass_badge_4_png.vtex"/>
+					<Label class="RPGStatsStatText" text="Luck"/>
+					<Label id="LuckNumber" class="RPGStatsStatNumber" text="0"/>
+					<Button class="RPGStatsStatButton" onactivate="addLuck()"/>
+					<Label class="RPGStatsStatDetail" text="+Increased Chance"/>
+					<Label class="RPGStatsStatDescriptionTextInfo" text="&#9432; Increases the chance of effects such as crits, evasion or even last hit gold"/>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>	

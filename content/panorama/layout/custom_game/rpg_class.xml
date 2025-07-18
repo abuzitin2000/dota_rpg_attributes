@@ -1,0 +1,92 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/rpg_class.css"/>
+	</styles>
+
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/util.js" />
+		<include src="file://{resources}/scripts/custom_game/rpg_class.js"/>
+	</scripts>
+
+	<snippets>
+
+	</snippets>
+
+	<Panel class="baseRPGPanel" hittest="false">
+		<Panel id="RPGClassPanel">
+			<!-- Header -->
+			<Label id="RPGClassHead" text="Select your class"/>
+			<Label id="RPGClassText" text="Don't worry about which one is best for your hero. With the attribute system, even a mage sven or fighter crystal maiden can be viable!"/>
+
+			<!-- Class List -->
+			<Panel id="RPGClassListPanel">
+				<Panel class="RPGClassesClassPanel">
+					<Image class="RPGClassesClassImage" src="s2r://panorama/images/pings/ping_world_heart_psd.vtex"/>
+					<Label class="RPGClassesClassText" text="Cleric"/>
+					<Label class="RPGClassesClassDescriptionText" text="Faith">
+						<Label class="RPGClassesClassDescriptionTextInfo" style="margin-left: 66px;" text="&#9432; Increases all healing including health regen, lifesteal and spell lifesteal"/>
+						<Panel class="RPGClassesClassDescriptionTextGroup">
+							<Label class="RPGClassesClassDescriptionTextSub" text="+20% Heal Amplification"/>
+						</Panel>
+					</Label>
+					<Label class="RPGClassesClassDescriptionText" text="Wrath">
+						<Panel class="RPGClassesClassDescriptionTextGroup">
+							<Label class="RPGClassesClassDescriptionTextSub" text="+20% Debuff Amplification"/>
+						</Panel>
+					</Label>
+					<TextButton class="RPGClassesClassButton" text="Select" onactivate="selectCleric()"/>
+				</Panel>
+				<Panel class="RPGClassesClassPanel">
+					<Image class="RPGClassesClassImage" src="s2r://panorama/images/pings/ping_world_fire_psd.vtex"/>
+					<Label class="RPGClassesClassText" text="Mage"/>
+					<Label class="RPGClassesClassDescriptionText" text="Sorcery">
+						<Panel class="RPGClassesClassDescriptionTextGroup">
+							<Label class="RPGClassesClassDescriptionTextSub" text="+75 Cast Range"/>
+							<Label class="RPGClassesClassDescriptionTextSub" text="+25% Cast Speed"/>
+						</Panel>
+					</Label>
+					<Label class="RPGClassesClassDescriptionText" text="Arcane">
+						<Panel class="RPGClassesClassDescriptionTextGroup">
+							<Label class="RPGClassesClassDescriptionTextSub" text="+10% Manaloss Reduction"/>
+						</Panel>
+					</Label>
+					<TextButton class="RPGClassesClassButton" text="Select" onactivate="selectMage()"/>
+				</Panel>
+				<Panel class="RPGClassesClassPanel">
+					<Image class="RPGClassesClassImage" src="s2r://panorama/images/pings/ping_world_bait2_psd.vtex"/>
+					<Label class="RPGClassesClassText" text="Rogue"/>
+					<Label class="RPGClassesClassDescriptionText" text="Swiftness">
+						<Panel class="RPGClassesClassDescriptionTextGroup">
+							<Label class="RPGClassesClassDescriptionTextSub" text="+20 Movement Speed"/>
+							<Label class="RPGClassesClassDescriptionTextSub" text="+10% Evasion"/>
+						</Panel>
+					</Label>
+					<Label class="RPGClassesClassDescriptionText" text="Lethality ">
+						<Label class="RPGClassesClassDescriptionTextInfo" style="margin-left: 116px;" text="&#9432; Increases all damage you deal including pure damage"/>
+						<Panel class="RPGClassesClassDescriptionTextGroup">
+							<Label class="RPGClassesClassDescriptionTextSub" text="+5% Increased All Damage"/>
+						</Panel>
+					</Label>
+					<TextButton class="RPGClassesClassButton" text="Select" onactivate="selectRogue()"/>
+				</Panel>
+				<Panel class="RPGClassesClassPanel">
+					<Image class="RPGClassesClassImage" src="s2r://panorama/images/pings/ping_world_fight_psd.vtex"/>
+					<Label class="RPGClassesClassText" text="Fighter"/>
+					<Label class="RPGClassesClassDescriptionText" text="Resolve">
+						<Label class="RPGClassesClassDescriptionTextInfo" style="margin-left: 97px;" text="&#9432; 50% Chance to block damage, physical stacks with inherit melee hero block"/>
+						<Panel class="RPGClassesClassDescriptionTextGroup">
+							<Label class="RPGClassesClassDescriptionTextSub" text="+20 Physical Damage Block"/>
+							<Label class="RPGClassesClassDescriptionTextSub" text="+10 Magical Damage Block"/>
+						</Panel>
+					</Label>
+					<Label class="RPGClassesClassDescriptionText" text="Unstoppable ">
+						<Panel class="RPGClassesClassDescriptionTextGroup">
+							<Label class="RPGClassesClassDescriptionTextSub" text="+10% Status Resistance"/>
+						</Panel>
+					</Label>
+					<TextButton class="RPGClassesClassButton" text="Select" onactivate="selectFighter()"/>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>	

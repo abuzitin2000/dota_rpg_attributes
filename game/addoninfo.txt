@@ -1,0 +1,14 @@
+"AddonInfo"
+{
+	"EnablePickRules"                 "1"
+	"maps"                            "dota_fixed desert_quintet forest_solo"
+	"Default_Keys"
+    {
+        "01"
+        {
+            "Key"       "P"
+            "Command"   "+CustomGameExecuteCloseTab"
+            "Name"      "Close tabs"
+        }
+    }
+}

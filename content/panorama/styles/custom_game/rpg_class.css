@@ -1,0 +1,207 @@
+.baseRPGPanel
+{
+	width: 100%;
+	height: 100%;
+}
+
+#RPGClassPanel
+{
+	horizontal-align: center;
+	vertical-align: center;
+	background-image: url("s2r://panorama/images/hud/reborn/main_shop_bg_psd.vtex");
+	background-size: 100% 100%;
+	width: 1150px;
+	height: 675px;
+	box-shadow: #000000 0px 0px 24px 0px;
+    wash-color: #fff;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+#RPGClassHead
+{
+	horizontal-align: center;
+	color: white;
+	font-family: reaver;
+	font-size: 42px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 8px;
+	text-align: center;
+}
+
+#RPGClassText
+{
+	horizontal-align: center;
+	color: rgba(150, 150, 150, 0.25);
+	font-family: reaver;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-top: 75px;
+	text-align: center;
+	width: 1125px;
+}
+
+#RPGClassListPanel
+{
+	flow-children: left;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 26px;
+}
+
+.RPGClassesClassPanel
+{
+	margin-right: 13px;
+	margin-left: 13px;
+	flow-children: down;
+	background-image: url("s2r://panorama/images/hud/reborn/bg_minimap_psd.vtex");
+	background-size: 100% 100%;
+	width: 250px;
+}
+
+.RPGClassesClassImage
+{
+	horizontal-align: center;
+	width: 200px;
+    height: 200px;
+    overflow: clip clip;
+    margin-right: 8px;
+}
+
+.RPGClassesClassText
+{
+	horizontal-align: center;
+    color: white;
+    font-family: reaver;
+	font-size: 28px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	width: 300px;
+	height: 50px;
+}
+
+.RPGClassesClassDescriptionText
+{
+	horizontal-align: center;
+    color: white;
+    font-family: reaver;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: left;
+	width: 240px;
+	height: 75px;
+	margin-left: 10px;
+	margin-top: 18px;
+	overflow: noclip;
+}
+
+.RPGClassesClassDescriptionTextInfo
+{
+    color: white;
+    font-family: arial;
+	font-size: 18px;
+	letter-spacing: 0px;
+	font-weight: bold;
+	text-align: left;
+	width: 15px;
+	height: 25px;
+	overflow: scroll;
+	text-shadow: 2px 2px 0px 1.0 #000000;
+}
+
+.RPGClassesClassDescriptionTextInfo:hover
+{
+	width: 650px;
+	height: 25px;
+	background-color: gradient( linear, 85% 50%, 100% 100%, from( rgba(0, 0, 0, 0.75) ), to( rgba(0, 0, 0, 0.0) ) );
+}
+
+.RPGClassesClassDescriptionTextGroup
+{
+	flow-children: down;
+	margin-top: 26px;
+}
+
+.RPGClassesClassDescriptionTextSub
+{
+	horizontal-align: center;
+    color: white;
+    font-family: reaver;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: left;
+	width: 300px;
+	margin-left: 4px;
+	margin-top: 6px;
+}
+
+.RPGClassesClassButton
+{
+	horizontal-align: center;
+	height: 50px;
+	width: 225px;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #373d45 ), to( #4d5860 ) );
+	border-style: solid;
+    border-width: 1px;
+    border-top-color: #555555;
+    border-left-color: #494949;
+    border-bottom-color: #333333;
+    border-right-color: #404040;
+    transition-property: background-color;
+    transition-duration: 0.05s;
+    transition-timing-function: linear;
+    margin-bottom: 12px;
+}
+
+.RPGClassesClassButton Label
+{
+    margin-top: 2px;
+    color: #FFFFFF;
+    font-family: reaver;
+	font-size: 26px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+    text-align: center;
+    horizontal-align: center;
+    vertical-align: middle;
+    text-shadow: 2px 2px 0px 1.0 #000000;
+    transition-property: color;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-in-out;
+}
+
+.RPGClassesClassButton:hover
+{
+	brightness: 1.5;
+}
+
+.RPGClassesClassButton:active
+{
+	brightness: 2;
+	pre-transform-scale2d: 0.9;
+	sound: "ui_generic_button_click";
+}
+
+.RPGClassesClassDetail
+{
+	vertical-align: center;
+    color: grey;
+    font-family: reaver;
+	font-size: 22px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-left: 28px;
+	margin-bottom: 4px;
+}
